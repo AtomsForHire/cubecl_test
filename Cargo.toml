@@ -1,0 +1,16 @@
+[package]
+name = "cubecl_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cubecl = { version = "0.6.0", features = ["wgpu"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+
+[features]
+hip = ["cubecl/hip"]
+wgpu = ["cubecl/wgpu"]
+
