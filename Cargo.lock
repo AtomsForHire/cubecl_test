@@ -500,7 +500,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "cublecl_test"
+name = "cubecl_test"
 version = "0.1.0"
 dependencies = [
  "cubecl",
